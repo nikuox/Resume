@@ -1,0 +1,307 @@
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.nk-bg-lightgreen {
+  background-color: lightgreen !important;
+}
+
+.nk-bg-brown {
+  background-color: rgba(104, 72, 24, 0.815) !important;
+}
+.nk-bg-lightbrown {
+  background-color: rgba(162, 127, 75, 0.815) !important;
+}
+.nk-bg-darkbrown {
+  background-color: rgba(56, 36, 5, 0.815) !important;
+}
+.nk-bg-creambrown {
+  background-color: rgba(237, 193, 127, 0.815) !important;
+}
+
+.nk-text-lightgreen {
+  color: white !important;
+}
+
+.nk-text-brown {
+  color: white !important;
+}
+
+.nk-text-lightbrown {
+  color: white !important;
+}
+
+.nk-text-darkbrown {
+  color: white !important;
+}
+
+.nk-text-creambrown {
+  color: white !important;
+}
+
+.nk-mb {
+  margin-bottom: 20px;
+}
+
+/* top menu */
+
+#header {
+  display: none;
+}
+
+#header .top-menu {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#header .top-menu-space {
+  height: 60px;
+}
+
+#header .nav-icon {
+  color: white;
+  font-size: 40px;
+  margin-left: 15px;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 980px) {
+  #header {
+    display: block;
+  }
+}
+
+/* aside */
+
+#aside {
+  width: 300px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#aside .top > img {
+  width: 100%;
+  display: block;
+}
+
+#aside .top {
+  position: relative;
+}
+
+#aside .overlay {
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+#aside .avatar > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+#aside .intro {
+  font-size: 11px;
+  color: white;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+#aside .social {
+  margin-top: 10px;
+}
+#aside .social a {
+  color: white;
+  margin-right: 15px;
+}
+
+#aside .side-nav {
+  background-color: white;
+  height: 100%;
+}
+
+#aside .side-nav li {
+  padding: 15px 20px;
+  list-style-type: none;
+  color: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+}
+
+#aside .side-nav li:hover {
+  background-color: lightgrey;
+}
+
+#aside .side-nav li i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 980px) {
+  #aside {
+    display: none;
+  }
+}
+
+/* main content */
+
+#maincontent {
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.nk-card-img-top {
+  height: 360px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.nk-row {
+  display: flex;
+}
+
+.nk-center {
+  text-align: center;
+}
+
+.nk-muted {
+  color: grey;
+  font-size: smaller;
+}
+
+.nk-boxshadow {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+}
+
+.nk-card {
+  border-radius: 5px;
+}
+.header-profile .header-introduce {
+  width: 360px;
+  position: relative;
+  padding-left: 100px;
+}
+.header-profile .header-introduce img {
+  position: absolute;
+  border-radius: 100%;
+  width: 80px;
+  top: -40px;
+  left: 20px;
+}
+
+.header-profile .header-detail {
+  width: 360px;
+}
+
+.header-profile .header-detail .item {
+  width: 33%;
+}
+
+.header-profile .nk-card-content {
+  height: 150px;
+}
+
+.nk-card-content > .nk-row {
+  justify-content: space-between;
+}
+
+.nk-card-content .header-detail,
+.nk-card-content,
+.header-introduce {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-detail > .nk-row {
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  #maincontent {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nk-card-content .header-detail {
+    margin: 0 auto;
+  }
+  .nk-content-profile > .nk-row {
+    flex-wrap: wrap;
+  }
+}
+
+/* stats */
+
+.state .nk-row {
+  margin-left: -5px;
+  margin-right: -5px;
+  flex-wrap: wrap;
+}
+.state .item {
+  width: 25%;
+  color: white;
+  padding: 0 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.state .details {
+  padding: 20px 0;
+}
+.state .title {
+  font-size: 25px;
+}
+.state .title i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .state .item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .state .item {
+    width: 100%;
+  }
+}
+
+/* aboutme */
+
+.aboutme .p1 p {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.aboutme .p2 p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  color: rgb(134, 131, 131);
+  padding: 15px 15px;
+  border-left: 3px solid tan;
+  border-radius: 5px;
+}
